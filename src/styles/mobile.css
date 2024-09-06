@@ -1,0 +1,14 @@
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+      height: 100vh;
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .accordion {
+      width: 100%;
+    }
+    /* Add more styles as needed for mobile views */
+  }

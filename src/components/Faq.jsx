@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import Accordion from "./Accordion";
-
+import "../styles/mobile.css";
 const Faq = () => {
   return (
-    <section className="container w-auto h-auto">
+    <section className="container w-full h-full">
       <div className="flex flex-col w-full h-full">
         <div>
           <p>FREQUENTLY ASKED QUESTIONS</p>
