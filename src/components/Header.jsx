@@ -60,15 +60,6 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* Login Button (Hidden on Mobile) */}
-      <div className="hidden lg:flex">
-        <Link to="/login">
-          <button className="rounded-xl bg-[#ffffff] px-8 py-2 border-2 border-[#a9a9a9] bg-white text-[#003c3c]">
-            Login
-          </button>
-        </Link>
-      </div>
-
       {/* Search Bar for Mobile, shown below the logo */}
       <div className="items-center w-full ml-4 lg:hidden">
         <input
@@ -77,6 +68,15 @@ const Header = () => {
           className="w-full h-10 px-4 border border-gray-300 rounded-full font-primarytxt"
           aria-label="Search Creators"
         />
+      </div>
+
+      {/* Login Button */}
+      <div className="flex lg:ml-auto">
+        <Link to="/login">
+          <button className="rounded-xl bg-[#ffffff] px-8 py-2 border-2 border-[#a9a9a9] bg-white text-[#003c3c]">
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );
