@@ -12,9 +12,8 @@ const Header = () => {
   return (
     <div
       className="flex flex-row justify-between fixed text-body1 backdrop-blur-xl
-        h-20 my-[12px] p-[20px] w-full
-        bg-secondary font-primarytxt rounded-[35px] items-center
-        lg:w-[1200px] lg:my-[12px] lg:gap-[60px] lg:flex-row"
+        h-20 my-[12px] p-[20px] w-[90vw]
+        bg-secondary font-primarytxt rounded-[35px] items-center gap-2"
     >
       {/* Logo and Search Bar for Desktop */}
       <div className="flex flex-row items-center w-full lg:w-auto">
@@ -22,23 +21,23 @@ const Header = () => {
           <img
             src="/Images/logo.svg"
             alt="YB Store Logo"
-            className="h-12 w-auto"
+            className="w-auto h-12"
           />
         </Link>
 
         {/* Search Bar for Desktop, hidden on mobile */}
-        <div className=" hidden lg:block">
+        <div className="hidden lg:block">
           <input
             type="text"
             placeholder="Search Creators"
-            className="rounded-full border border-gray-300 h-10 font-primarytxt px-4"
+            className="h-10 px-4 border border-gray-300 rounded-full font-primarytxt"
             aria-label="Search Creators"
           />
         </div>
       </div>
 
       {/* Hamburger Menu for Mobile */}
-      <div className="lg:hidden flex items-center">
+      <div className="flex items-center lg:hidden">
         <button onClick={toggleMenu}>
           <FaBars className="text-2xl" />
         </button>
@@ -50,13 +49,13 @@ const Header = () => {
         flex-col absolute lg:static top-[60px] left-0 right-0 bg-secondary lg:bg-transparent 
         p-4 lg:p-0 z-10 rounded-lg lg:rounded-none ${isMenuOpen ? "flex" : "hidden"}`}
       >
-        <Link to="/contact" className="cursor-pointer text-center py-2 lg:py-0">
+        <Link to="/contact" className="py-2 text-center cursor-pointer lg:py-0">
           Contact Us
         </Link>
-        <Link to="/profile" className="cursor-pointer text-center py-2 lg:py-0">
+        <Link to="/profile" className="py-2 text-center cursor-pointer lg:py-0">
           About Us
         </Link>
-        <Link to="/policies" className="cursor-pointer text-center py-2 lg:py-0">
+        <Link to="/policies" className="py-2 text-center cursor-pointer lg:py-0">
           Policies
         </Link>
       </div>
@@ -71,11 +70,11 @@ const Header = () => {
       </div>
 
       {/* Search Bar for Mobile, shown below the logo */}
-      <div className="lg:hidden w-full  ml-4 items-center">
+      <div className="items-center w-full ml-4 lg:hidden">
         <input
           type="text"
           placeholder="Search Creators"
-          className="rounded-full border border-gray-300 h-10 font-primarytxt px-4 w-full"
+          className="w-full h-10 px-4 border border-gray-300 rounded-full font-primarytxt"
           aria-label="Search Creators"
         />
       </div>

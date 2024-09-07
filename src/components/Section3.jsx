@@ -4,10 +4,10 @@ import timeline from "../assets/timelineData.json";
 
 const Section3 = () => {
   return (
-    <section className="container mx-auto lg:w-[75vw] md:w-[90vw] h-full flex flex-row justify-center my-12">
+    <section className="container mx-auto lg:w-[75vw] md:w-[90vw] h-full flex flex-col md:flex-row justify-center my-12 px-6">
       <div className="basis-2/5">
-        <div className="w-auto h-auto flex flex-col bg-primary text-othertxt rounded-3xl p-4">
-          <p className="text-h3 font-semibold">Start Vybing with us!</p>
+        <div className="flex flex-col w-auto h-auto p-4 bg-primary text-othertxt rounded-3xl">
+          <p className="font-semibold text-h3">Start Vybing with us!</p>
           <p className="py-8 text-body1">
             &ldquo;We help influencers make money by monetizing their travel
             plans, merchandise, and digital goods and many more.&rdquo;
@@ -17,15 +17,15 @@ const Section3 = () => {
           </button>
         </div>
       </div>
-      <div className="basis-3/5 relative max-w-4xl mx-auto p-8">
+      <div className="relative max-w-4xl p-8 mx-auto basis-3/5">
         {/* Container for vertical line and timeline items */}
         <div className="relative flex">
-          {/* <div className="absolute inset-0 left-1/2 border-l-2 border-gray-300"></div> */}
-          <div className="flex flex-col pl-10 space-y-8 w-full">
+          {/* <div className="absolute inset-0 border-l-2 border-gray-300 left-1/2"></div> */}
+          <div className="flex flex-col w-full pl-10 space-y-8">
             {timeline.timelineData.map((event, index) => (
               <div key={index} className="relative flex flex-col items-start">
                 {/* Numbered Box */}
-                <div className="absolute -left-6 flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full font-semibold">
+                <div className="absolute flex items-center justify-center w-6 h-6 font-semibold text-white bg-blue-500 rounded-full -left-6">
                   {index + 1}
                 </div>
                 {/* Timeline Event */}

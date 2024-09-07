@@ -8,14 +8,13 @@ const Profile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log("Username:", username);
     console.log("Email:", email);
     console.log("Password:", password);
   };
   return (
     <section className="mt-32 flex justify-center h-auto w-full ">
-      <div className="flex flex-row justify-center gap-4  container mx-auto lg:w-[75vw] md:w-[90vw] h-auto ">
+      <div className="flex md:flex-row justify-center gap-4  container mx-auto lg:w-[75vw] md:w-[90vw] h-auto ">
         <div className="flex basis-2/6 flex-col items-center text-[#003c3c] rounded-lg border-2 w-full h-auto border-primarytxt py-2 px-8">
           <div>
             <img src="/Images/profile.svg" alt="Profile photo" />

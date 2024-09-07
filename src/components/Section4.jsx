@@ -25,7 +25,7 @@ const Section4 = () => {
 
   return (
     <section className="w-full h-auto flex bg-[#e5f0f1]">
-      <div className="container mx-auto lg:w-[75vw] md:w-[90vw] h-full flex flex-col my-8">
+      <div className="container mx-auto lg:w-[75vw] md:w-[90vw] h-full flex flex-col my-8 px-6">
         {/* Heading */}
         <div className="flex w-full h-auto justify-center items-center text-h3 font-bold my-16">
           <p>ESTIMATE EARNING POTENTIAL</p>

@@ -9,7 +9,7 @@ import Header from "./components/Header";
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col items-center w-full h-full">
+      <div className="flex flex-col items-center w-full h-full px-6">
         <Header />
         <div className="flex flex-col w-full h-full">
           <Routes>
