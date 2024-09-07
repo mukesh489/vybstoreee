@@ -13,7 +13,7 @@ const Login = () => {
     console.log("Password:", password);
   };
   return (
-    <section className="w-full h-full flex flex-row">
+    <section className="flex flex-row w-full h-full">
       <div className="bg-[#e5f0f1] h-[100vh] flex-shrink-0 w-[60vw] flex items-center justify-end px-16 pt-32">
         <img
           src="/Images/login.svg"
@@ -21,12 +21,12 @@ const Login = () => {
           className="object-contain w-4/5 mt-2"
         />
       </div>
-      <div className="bg-othertxt w-full h-full text-primarytxt flex flex-col mt-32 mr-32 px-16">
+      <div className="flex flex-col w-full h-full px-16 mt-32 mr-32 bg-othertxt text-primarytxt">
         <div className="flex justify-center">
           <p className="font-semibold text-h1">Login</p>
         </div>
 
-        <div className="rounded-full border border-gray-100 h-10 px-4 my-8 mx-auto flex items-center justify-center">
+        <div className="flex items-center justify-center h-10 px-4 mx-auto my-8 border border-gray-100 rounded-full">
           <div className="text-center">Sign up / Sign in Google</div>
         </div>
         <div className="flex items-center justify-center">
@@ -41,7 +41,7 @@ const Login = () => {
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-h3 font-semibold text-gray-700"
+                className="block font-semibold text-gray-700 text-h3"
               >
                 Email
               </label>
@@ -59,7 +59,7 @@ const Login = () => {
             <div className="mb-4">
               <label
                 htmlFor="password"
-                className="block text-h3 font-semibold text-gray-700"
+                className="block font-semibold text-gray-700 text-h3"
               >
                 Password
               </label>
@@ -77,7 +77,7 @@ const Login = () => {
             <div className="my-4 text-body1 text-[#003c3c] font-semibold cursor-pointer">
               <p>Reset Password</p>
             </div>
-            <div className="w-auto flex justify-center ">
+            <div className="flex justify-center w-auto ">
               <button
                 type="submit"
                 className="w-auto rounded-full py-2 px-12 border-2 border-[#003c3c] bg-blue-500 text-white text-body2 font-semibold hover:shadow-lg "
@@ -95,7 +95,7 @@ const Login = () => {
             <hr className="flex-grow border-t-2 border-[#e0e0e0]" />
           </div>
         </div>
-        <div className="w-auto flex justify-center ">
+        <div className="flex justify-center w-auto ">
           <Link to="/signup">
             <button className="w-auto rounded-2xl pb-3 py-2 px-12 border-2 bg-[#003c3c] text-othertxt text-h4 font-semibold hover:shadow-lg ">
               Sign up

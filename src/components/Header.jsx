@@ -58,6 +58,18 @@ const Header = () => {
         <Link to="/policies" className="py-2 text-center cursor-pointer lg:py-0">
           Policies
         </Link>
+        {/* Add some space */}
+        <div className="h-4" />
+        {/* Login Button */}
+        <div className="flex justify-center mt-2">
+          <Link to="/login">
+            <button
+              className="rounded-xl bg-[#ffffff] px-8 py-2 border-2 border-[#a9a9a9] bg-white text-[#003c3c]"
+            >
+              Login
+            </button>
+          </Link>
+        </div>
       </div>
 
       {/* Search Bar for Mobile, shown below the logo */}
@@ -68,15 +80,6 @@ const Header = () => {
           className="w-full h-10 px-4 border border-gray-300 rounded-full font-primarytxt"
           aria-label="Search Creators"
         />
-      </div>
-
-      {/* Login Button */}
-      <div className="flex lg:ml-auto">
-        <Link to="/login">
-          <button className="rounded-xl bg-[#ffffff] px-8 py-2 border-2 border-[#a9a9a9] bg-white text-[#003c3c]">
-            Login
-          </button>
-        </Link>
       </div>
     </div>
   );
