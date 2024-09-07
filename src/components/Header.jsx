@@ -47,33 +47,34 @@ const Header = () => {
       <div
         className={`lg:flex lg:flex-row lg:gap-16 lg:items-center 
         flex-col absolute lg:static top-[60px] left-0 right-0 bg-secondary lg:bg-transparent 
-        p-4 lg:p-0 z-10 rounded-lg lg:rounded-none ${isMenuOpen ? "flex" : "hidden"}`}
+        p-4 lg:p-0 z-10 rounded-lg lg:rounded-none ${isMenuOpen ? "flex" : "hidden"
+          }`}
       >
-        <Link to="/contact" className="py-2 text-center cursor-pointer lg:py-0">
-          Contact Us
-        </Link>
-        <Link to="/profile" className="py-2 text-center cursor-pointer lg:py-0">
-          About Us
-        </Link>
-        <Link to="/policies" className="py-2 text-center cursor-pointer lg:py-0">
-          Policies
-        </Link>
+        <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-center">
+          <Link to="/contact" className="py-2 text-center cursor-pointer lg:py-0">
+            Contact Us
+          </Link>
+          <Link to="/profile" className="py-2 text-center cursor-pointer lg:py-0">
+            About Us
+          </Link>
+          <Link to="/policies" className="py-2 text-center cursor-pointer lg:py-0">
+            Policies
+          </Link>
+        </div>
         {/* Add some space */}
         <div className="h-4" />
         {/* Login Button */}
-        <div className="flex justify-center mt-2">
-          <Link to="/login">
-            <button
-              className="rounded-xl bg-[#ffffff] px-8 py-2 border-2 border-[#a9a9a9] bg-white text-[#003c3c]"
-            >
-              Login
-            </button>
-          </Link>
-        </div>
+        <Link to="/login">
+          <button
+            className="rounded-xl bg-[#ffffff] px-8 py-2 border-2 border-[#a9a9a9] bg-white text-[#003c3c] font-bold"
+          >
+            Login
+          </button>
+        </Link>
       </div>
 
       {/* Search Bar for Mobile, shown below the logo */}
-      <div className="items-center w-full ml-4 lg:hidden">
+      <div className="items-center w-full lg:hidden">
         <input
           type="text"
           placeholder="Search Creators"
